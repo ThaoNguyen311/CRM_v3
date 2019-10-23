@@ -1,28 +1,4 @@
-﻿select.form-control:not([size]):not([multiple]) {
-    height: 35px;
-}
-
-.chosen-container-multi .chosen-choices li.search-choice {
-    margin: 6px 0 4px 5px;
-}
-
-.chosen-container-multi .chosen-choices {
-    padding: 0 8px;
-    min-height: 35px;
-    border-radius: 0;
-}
-
-.chosen-container-single .chosen-single {
-    min-height: 35px;
-}
-
-.chosen-container-active .chosen-choices {
-    border-radius: 0 !important;
-}
-
-.chosen-container {
-    font-size: 14px;
-}
+﻿
 
 .iradio_square-green {
     margin-right: 5px;
