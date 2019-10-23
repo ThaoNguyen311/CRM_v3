@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ImmiCRM" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=103.252.252.254;Initial Catalog=ImmiCRM;Persist Security Info=True;User ID=sa" SettingsObjectName="WorkbaseImm.Properties.Settings" SettingsPropertyName="ImmiCRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.M_ACTION_HISTORY" Member="M_ACTION_HISTORies">
+    <Type Name="M_ACTION_HISTORY">
+      <Column Name="HISTORY_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STAFF_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HISTORY_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HISTORY_CONTENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HISTORY_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HISTORY_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RS_STAFF" Member="RS_STAFFs">
+    <Type Name="RS_STAFF">
+      <Column Name="CUS_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STAFF_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MISSION_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RS_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RS_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_ACTIVITY" Member="M_ACTIVITies">
+    <Type Name="M_ACTIVITY">
+      <Column Name="ACT_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STAFF_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ACT_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_ASSET_OTHER" Member="M_ASSET_OTHERs">
+    <Type Name="M_ASSET_OTHER">
+      <Column Name="ASSET_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NATION_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ASSET_CATALORY" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ASSET_BANK_INFOR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ASSET_BANK_BALANCE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ASSET_BANK_OPENDATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ASSET_DOCUMENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_ATTACH" Member="M_ATTACHes">
+    <Type Name="M_ATTACH">
+      <Column Name="ATTACH_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMAIL_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FEEDBACK_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FILE_NAME" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FILE_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FILE_LINK" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ATTACH_FLAG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ATTACH_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_ATTACH_BK" Member="M_ATTACH_BKs">
+    <Type Name="M_ATTACH_BK">
+      <Column Name="ATTACH_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMAIL_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FEEDBACK_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FILE_NAME" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FILE_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FILE_LINK" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ATTACH_FLAG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ATTACH_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_CALENDAR" Member="M_CALENDARs">
+    <Type Name="M_CALENDAR">
+      <Column Name="CAL_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CAL_CODE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_TITLE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_HOUR_S" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_HOUR_E" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_DATE_FULL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_WHO" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_CREATOR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_FLAG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_JUNBI_1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_JUNBI_2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAL_JUNBI_3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_CLASSIFICATION" Member="M_CLASSIFICATIONs">
+    <Type Name="M_CLASSIFICATION">
+      <Column Name="CLASS_CODE1" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLASS_CODE2" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLASS_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CLASS_KEYWORD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLASS_URL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CLASS_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CLASS_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CLASS_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_COMPANY" Member="M_COMPANies">
+    <Type Name="M_COMPANY">
+      <Column Name="COMPANY_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NATION_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="COM_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_INVEST_START" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_INVEST_NOW" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_YEAR1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_PROFIT_YEAR1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_YEAR2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_PROFIT_YEAR2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_YEAR3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_PROFIT_YEAR3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_YEAR4" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_PROFIT_YEAR4" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_YEAR5" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_PROFIT_YEAR5" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_CAPITAL_START" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_CAPITAL_NOW" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COM_DOCUMENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_CONTACT_EMAIL" Member="M_CONTACT_EMAILs">
+    <Type Name="M_CONTACT_EMAIL">
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_CUS_RELATIVE" Member="M_CUS_RELATIVEs">
+    <Type Name="M_CUS_RELATIVE">
+      <Column Name="RELATIVE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RELATIVE_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RELATIVE_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RELATIVE_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RELATIVE_BIRTH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RELATIVE_SEX" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RELATIVE_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_CUSTOMER" Member="M_CUSTOMERs">
+    <Type Name="M_CUSTOMER">
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STATUS_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CUS_NAME_VN" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CUS_NAME_ENG" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CUS_EMAIL" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CUS_PHONE" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CUS_BIRTH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CUS_BIRTH_FULL" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUS_SEX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_MARITAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_TOTAL_ASSET" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CUS_PASS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CUS_REVIEW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NOTE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_VIP_CODE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PARTNER_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CUS_CHILDREN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_RESIDING_ABROAD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_APPLIED" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CUS_RELATIVES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_RELATIVES_FOREIGN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PASSCUS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="APP_EMAIL" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="APP_PASS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="APP_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="APP_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="APP_USER" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="APP_EDIT_FLAG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ROWID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="WM_FLAG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_SEND_NOTI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IBT_FLAG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CAC_FLAG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_DIGITAL" Member="M_DIGITALs">
+    <Type Name="M_DIGITAL">
+      <Column Name="DIG_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CUS_EMAIL" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CUS_PHONE" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PRODUCT" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="REGION" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DIG_DATE" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DIG_SALE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DIG_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DIG_SOURCE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DIG_STT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DUPHONG1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DUPHONG2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_EDUCATION" Member="M_EDUCATIONs">
+    <Type Name="M_EDUCATION">
+      <Column Name="EDU_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NATION_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EDU_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EDU_START_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EDU_END_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EDU_MAJOR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EDU_GRADE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EDU_DOCUMENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_EMAIL" Member="M_EMAILs">
+    <Type Name="M_EMAIL">
+      <Column Name="EMAIL_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmailID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmailPOPID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL_HEADER" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EMAIL_FROM" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL_TO" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL_CC" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EMAIL_BCC" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EMAIL_SUBJECT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EMAIL_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EMAIL_CONTENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STAFF_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataFile" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_ERROR" Member="M_ERRORs">
+    <Type Name="M_ERROR">
+      <Column Name="ERROR_1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ERROR_2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_EVENT" Member="M_EVENTs">
+    <Type Name="M_EVENT">
+      <Column Name="EVENT_CODE1" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EVENT_CODE2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EVENT_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EVENT_POSITION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EVENT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EVENT_KEYWORD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EVENT_FLAG_ENABLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EVENT_URL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EVENT_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EVENT_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EVENT_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_EXPERIENCE" Member="M_EXPERIENCEs">
+    <Type Name="M_EXPERIENCE">
+      <Column Name="EXP_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NATION_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EXP_COMPANY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXP_POSITION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXP_WORK_START" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXP_WORK_END" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXP_WORK_SALARY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXP_DOCUMENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_FEE" Member="M_FEEs">
+    <Type Name="M_FEE">
+      <Column Name="FEE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FEE_AMOUNT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FEE_STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FEE_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FEE_KIND" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FEE_NATION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_FEEDBACK" Member="M_FEEDBACKs">
+    <Type Name="M_FEEDBACK">
+      <Column Name="FEEDBACK_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STAFF_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FEEDBACK_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FEEDBACK_CONTENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FEEDBACK_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FEEDBACK_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FLAG_SEEN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_GUEST" Member="M_GUESTs">
+    <Type Name="M_GUEST">
+      <Column Name="CustomerPhone" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirebaseToken" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_HIS_DIGITAL" Member="M_HIS_DIGITALs">
+    <Type Name="M_HIS_DIGITAL">
+      <Column Name="HIS_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HIS_DIG_ID" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="HIS_DIG_STAFF" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="HIS_DIG_CONTENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HIS_DIG_JUNBI1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HIS_DIG_JUNBI2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_INFO" Member="M_INFOs">
+    <Type Name="M_INFO">
+      <Column Name="IF_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IF_LOCATION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IF_ADRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IF_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IF_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_MARKETING" Member="M_MARKETINGs">
+    <Type Name="M_MARKETING">
+      <Column Name="MAR_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NATION_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAR_CONTACT_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_MEET_CUS_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CONTRACT_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_VISA_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CUS_EVALUATION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CUS_CONTACT_METHOD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CUS_SOURCE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAR_CUS_SOURCE_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CUS_INTEREST" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_PARTNER_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAR_VIP_CARD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAR_CUS_WARNING" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAR_OFFICE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_NOTIFICATION_CUSTOMERS" Member="M_NOTIFICATION_CUSTOMERs">
+    <Type Name="M_NOTIFICATION_CUSTOMER">
+      <Column Name="SegmentId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CustomerId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_NOTIFICATION_MESSAGES" Member="M_NOTIFICATION_MESSAGEs">
+    <Type Name="M_NOTIFICATION_MESSAGE">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="HtmlBody" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="SentDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ReceivedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StaffId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_NOTIFICATION_SEGMENTS" Member="M_NOTIFICATION_SEGMENTs">
+    <Type Name="M_NOTIFICATION_SEGMENT">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_PARTNER_WORK" Member="M_PARTNER_WORKs">
+    <Type Name="M_PARTNER_WORK">
+      <Column Name="PART_W_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PART_W_STAFF_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PART_W_AGENT_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PART_W_CODE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PARTNER_CONTENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_PROCESS_SCAN_HIS" Member="M_PROCESS_SCAN_HIs">
+    <Type Name="M_PROCESS_SCAN_HI">
+      <Column Name="PSH_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PRO_TIME_DEAD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_PROCESS_STAGE" Member="M_PROCESS_STAGEs">
+    <Type Name="M_PROCESS_STAGE">
+      <Column Name="PRO_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PRO_PRODUCT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRO_CODE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRO_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRO_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRO_TIME_DEAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRO_CYCLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_PROCESS_STAGE_DETAILS" Member="M_PROCESS_STAGE_DETAILs">
+    <Type Name="M_PROCESS_STAGE_DETAIL">
+      <Column Name="PRO_D_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PRO_D_PRODUCT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRO_D_CODE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRO_D_INPUT_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRO_D_DEADLINE_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRO_D_REMIND_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRO_D_CUSID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_PRODUCT" Member="M_PRODUCTs">
+    <Type Name="M_PRODUCT">
+      <Column Name="ProductCode" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProductCode1" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductCode2" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductDescription" Type="System.String" DbType="NVarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductContent" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductUrl" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryIconName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProductPrepared1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SortOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_REALESTATE" Member="M_REALESTATEs">
+    <Type Name="M_REALESTATE">
+      <Column Name="ESTATE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NATION_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ESTATE_CATALORY" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ESTATE_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_BUY_DATE_PRICE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_SELL_DATE_PRICE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_PRICE_NOW" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SOURCE_MONEY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_CERTIFICATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_CONTRACT_BUY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_CONTRACT_SALE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_DECLARE_FEES" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_CONTRACT_GIVE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_CONTRACT_OTHER" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_OTHER_DETAILS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_RENT_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_RENT_DOC" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ESTATE_RENT_PRICE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_RELASIONSHIP" Member="M_RELASIONSHIPs">
+    <Type Name="M_RELASIONSHIP">
+      <Column Name="CUS_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_CODE1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_CODE2" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RS_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RS_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_RELASIONSHIP2" Member="M_RELASIONSHIP2s">
+    <Type Name="M_RELASIONSHIP2">
+      <Column Name="CUS_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_CODE1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_CODE2" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RS_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RS_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_SALE_LIST" Member="M_SALE_LISTs">
+    <Type Name="M_SALE_LIST">
+      <Column Name="SL_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SL_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_EVENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_CITY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE4" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE5" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_SALE_LIST_TMP" Member="M_SALE_LIST_TMPs">
+    <Type Name="M_SALE_LIST_TMP">
+      <Column Name="SL_ID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_EVENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_CITY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE4" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SL_NOTE5" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_SQL_STR" Member="M_SQL_STRs">
+    <Type Name="M_SQL_STR">
+      <Column Name="SQL_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SQL_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SQL_STR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_STAFF" Member="M_STAFFs">
+    <Type Name="M_STAFF">
+      <Column Name="STAFF_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STAFF_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="STAFF_NAME_OTHER" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STAFF_BIRTH" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STAFF_EMAIL" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STAFF_PASS_CRM" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="STAFF_PASS_EMAIL" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="STAFF_PERMISSION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STAFF_AVATAR_LINK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STAFF_PHONE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STAFF_NOTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STAFF_POSITION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL_HEADER" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SIGNATURE_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STAFF_OFFICE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STAFF_GROUP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STAFF_GROUP_ON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRODUCT_SALE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STAFF_TEAM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ROWID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RE_LINK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="APP_PASS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_SURVEY" Member="M_SURVEYs">
+    <Type Name="M_SURVEY">
+      <Column Name="SURVEY_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CUS_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_SEX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_OFFICE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_NATION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_LOCATION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_MONEY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_MONEY_UNIT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="F_APPLIED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="F_DENIED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="F_CRIMINAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="F_HENCHMAN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SURVEY_NOTE1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SURVEY_NOTE2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SURVEY_NOTE3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SURVEY_NOTE4" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_TEMP_DATA" Member="M_TEMP_DATAs">
+    <Type Name="M_TEMP_DATA">
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_NAME_VN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_NAME_ENG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_BIRTH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_SEX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RELATIVES_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RELATIVES_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CONTACT_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CUS_WARNING" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_OFFICE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_OFFICE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CONTACT_METHOD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CUS_SOURCE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CONTACT_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CONTRACT_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FPA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="[GROUP]" Member="GROUP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NATION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STAFF_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_TEMP_DATA1" Member="M_TEMP_DATA1s">
+    <Type Name="M_TEMP_DATA1">
+      <Column Name="CUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_NAME_VN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_NAME_ENG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_BIRTH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_SEX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUS_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RELATIVES_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RELATIVES_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CONTACT_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CUS_WARNING" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_OFFICE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_OFFICE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CONTACT_METHOD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAR_CUS_SOURCE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CONTACT_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FPA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="[GROUP]" Member="GROUP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NATION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STAFF_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_TEMP_EXP" Member="M_TEMP_EXPs">
+    <Type Name="M_TEMP_EXP">
+      <Column Name="CUS_ID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_NAME_VN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_NAME_ENG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUS_PHONE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STAFF_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STT_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_PARTNER" Member="M_PARTNERs">
+    <Type Name="M_PARTNER">
+      <Column Name="PARTNER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PARTNER_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PARTNER_EMAIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PARTNER_PHONE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PARTNER_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PARTNER_PASS" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PARTNER_PREPARED1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PARTNER_PREPARED2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FLAG_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSERT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DATE_CONTACT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PART_CHANEL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PART_SOURCE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PART_PORTFOLIO" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PART_CREATOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ROWID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.[2019_LOAD_FUNCTION_STAFF]" Method="_2019_LOAD_FUNCTION_STAFF">
+    <Parameter Name="P_StaffId" Parameter="p_StaffId" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="P_Function" Parameter="p_Function" Type="System.String" DbType="NVarChar(MAX)" />
+    <ElementType Name="_2019_LOAD_FUNCTION_STAFFResult">
+      <Column Name="STAFF_PERMISSION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FUNC" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.wb_STAFF_Reset_Pass_Work" Method="wb_STAFF_Reset_Pass_Work">
+    <Parameter Name="STAFF_EMAIL" Parameter="sTAFF_EMAIL" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="STAFF_PASS_CRM" Parameter="sTAFF_PASS_CRM" Type="System.String" DbType="NVarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.wb_PARTNER_Reset_Pass_Work" Method="wb_PARTNER_Reset_Pass_Work">
+    <Parameter Name="PARTNER_EMAIL" Parameter="pARTNER_EMAIL" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PASS_CRM" Parameter="pASS_CRM" Type="System.String" DbType="NVarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.wb_FUNCTION_Login" Method="wb_FUNCTION_Login">
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="NVarChar(500)" />
+    <ElementType Name="wb_FUNCTION_LoginResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Emails" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="HashedPassword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RowId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailAppPassword" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="SIGNATURE_EMAIL" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="StaffTeamName" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="AvatarImg" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Linkhome" Type="System.String" DbType="VarChar(23) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.wb_FUNCTION_Login_Oop_define" Method="wb_FUNCTION_Login_Oop_define">
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="wb_FUNCTION_Login_Oop_defineResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Emails" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="HashedPassword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RowId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailAppPassword" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="SIGNATURE_EMAIL" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="StaffTeamName" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="AvatarImg" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Linkhome" Type="System.String" DbType="VarChar(23) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>
