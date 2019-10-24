@@ -10,6 +10,17 @@
     <div class="row wrapper border-bottom white-bg page-heading">
         <div class="col-lg-12">
             <h2>HCM - Danh sách khách hàng đang bị khóa do không ai chăm sóc </h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a>Khách hàng</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Khách hàng ngẫu nhiên</strong>
+                </li>
+            </ol>
         </div>
     </div>
 </asp:Content>
@@ -120,9 +131,7 @@
                             <td class="center">
                                 Win 95+
                             </td>
-                            <td class="center">
-                                Win 95+
-                            </td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="">
                             <td>Trident</td>
@@ -133,7 +142,7 @@
                             <td class="center">5</td>
                             <td class="center">C</td>
                             <td class="center">5</td>
-                            <td class="center">C</td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -144,7 +153,7 @@
                             <td class="center">5.5</td>
                             <td class="center">A</td>
                             <td class="center">5.5</td>
-                            <td class="center">A</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -164,7 +173,7 @@
                             <td class="center">7</td>
                             <td class="center">A</td>
                              <td class="center">7</td>
-                            <td class="center">A</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -182,7 +191,7 @@
                             <td class="center">1.7</td>
                             <td class="center">A</td>
                              <td class="center">7</td>
-                            <td class="center">A</td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -200,7 +209,7 @@
                             <td class="center">1.8</td>
                             <td class="center">A</td>
                              <td class="center">7</td>
-                            <td class="center">A</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -244,277 +253,6 @@
                             <td>Win 98SE+</td>
                             <td class="center">1.7</td>
                             <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Netscape Navigator 9</td>
-                            <td>Win 98+ / OSX.2+</td>
-                            <td class="center">1.8</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Mozilla 1.0</td>
-                            <td>Win 95+ / OSX.1+</td>
-                            <td class="center">1</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Mozilla 1.1</td>
-                            <td>Win 95+ / OSX.1+</td>
-                            <td class="center">1.1</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Mozilla 1.2</td>
-                            <td>Win 95+ / OSX.1+</td>
-                            <td class="center">1.2</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Mozilla 1.3</td>
-                            <td>Win 95+ / OSX.1+</td>
-                            <td class="center">1.3</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Mozilla 1.4</td>
-                            <td>Win 95+ / OSX.1+</td>
-                            <td class="center">1.4</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Mozilla 1.5</td>
-                            <td>Win 95+ / OSX.1+</td>
-                            <td class="center">1.5</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Mozilla 1.6</td>
-                            <td>Win 95+ / OSX.1+</td>
-                            <td class="center">1.6</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Mozilla 1.7</td>
-                            <td>Win 98+ / OSX.1+</td>
-                            <td class="center">1.7</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Mozilla 1.8</td>
-                            <td>Win 98+ / OSX.1+</td>
-                            <td class="center">1.8</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Seamonkey 1.1</td>
-                            <td>Win 98+ / OSX.2+</td>
-                            <td class="center">1.8</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Epiphany 2.20</td>
-                            <td>Gnome</td>
-                            <td class="center">1.8</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Webkit</td>
-                            <td>Safari 1.2</td>
-                            <td>OSX.3</td>
-                            <td class="center">125.5</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Webkit</td>
-                            <td>Safari 1.3</td>
-                            <td>OSX.3</td>
-                            <td class="center">312.8</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Webkit</td>
-                            <td>Safari 2.0</td>
-                            <td>OSX.4+</td>
-                            <td class="center">419.3</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Webkit</td>
-                            <td>Safari 3.0</td>
-                            <td>OSX.4+</td>
-                            <td class="center">522.1</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Webkit</td>
-                            <td>OmniWeb 5.5</td>
-                            <td>OSX.4+</td>
-                            <td class="center">420</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Webkit</td>
-                            <td>iPod Touch / iPhone</td>
-                            <td>iPod</td>
-                            <td class="center">420.1</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Webkit</td>
-                            <td>S60</td>
-                            <td>S60</td>
-                            <td class="center">413</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Opera 7.0</td>
-                            <td>Win 95+ / OSX.1+</td>
-                            <td class="center">-</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Opera 7.5</td>
-                            <td>Win 95+ / OSX.2+</td>
-                            <td class="center">-</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Opera 8.0</td>
-                            <td>Win 95+ / OSX.2+</td>
-                            <td class="center">-</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Opera 8.5</td>
-                            <td>Win 95+ / OSX.2+</td>
-                            <td class="center">-</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Opera 9.0</td>
-                            <td>Win 95+ / OSX.3+</td>
-                            <td class="center">-</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Opera 9.2</td>
-                            <td>Win 88+ / OSX.3+</td>
-                            <td class="center">-</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Opera 9.5</td>
-                            <td>Win 88+ / OSX.3+</td>
-                            <td class="center">-</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Opera for Wii</td>
-                            <td>Wii</td>
-                            <td class="center">-</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Nokia N800</td>
-                            <td>N800</td>
-                            <td class="center">-</td>
-                            <td class="center">A</td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Presto</td>
-                            <td>Nintendo DS browser</td>
-                            <td>Nintendo DS</td>
-                            <td class="center">8.5</td>
-                            <td class="center">C/A<sup>1</sup></td>
-                             <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeC">
-                            <td>KHTML</td>
-                            <td>Konqureror 3.1</td>
-                            <td>KDE 3.1</td>
-                            <td class="center">3.1</td>
-                            <td class="center">C</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
                         </tr>

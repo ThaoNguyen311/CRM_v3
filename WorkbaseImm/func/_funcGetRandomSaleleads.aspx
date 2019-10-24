@@ -24,6 +24,17 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentAll" runat="server">
+    <div class="ibox p-5  bg-primary text-center">
+       <h2 class=""><i class="fa fa-quote-left"></i> Tony said</h2>
+        <p class="h6"><i>Bạn sẽ nhận được một khách hàng tiềm năng ngẫu nhiên. Hãy tận dụng và cố gắng bán một cái gì đó!</i></p>
+        
+    </div>
+    <div class="text-center">
+        <a href="#!"><i class="fa fa-arrow-down"></i></a>
+    </div>
+    <div class="text-center my-4">
+        <a class="btn btn-info" href="#"><i class="fa fa-hand-o-right"></i> TÌM KIẾM </a>
+    </div>
     <div class="row">
         <div class="col-md-6">
             <div class="ibox ">
@@ -74,15 +85,15 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-primary btn-rounded" href="#"> Chăm sóc khách này </a>
-                    <a class="btn btn-primary btn-rounded" href="#"> Trả lại </a>
-                    <a class="btn btn-primary btn-rounded" href="#"> Đề xuất xóa khách này </a>
+                    <a class="btn btn-success" href="#"> Chăm sóc khách này </a>
+                    <a class="btn btn-success" href="#"> Trả lại </a>
+                    <a class="btn btn-success" href="#"> Đề xuất xóa khách này </a>
                 </form>
             </div>
         </div>
         </div>
         <div class="col-md-6">
-             <div class="ibox ">
+            <div class="ibox ">
             <div class="ibox-title">
                 <h5>Nhật ký hồ sơ</h5>
                 <div class="ibox-tools">

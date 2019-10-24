@@ -157,9 +157,7 @@
                             <td class="center">
                                 Win 95+
                             </td>
-                            <td class="center">
-                                Win 95+
-                            </td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="">
                             <td>Trident</td>
@@ -171,7 +169,7 @@
                             <td class="center">C</td>
                             <td class="center">5</td>
                             <td class="center">C</td>
-                            <td class="center">C</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -183,7 +181,7 @@
                             <td class="center">A</td>
                             <td class="center">5.5</td>
                             <td class="center">A</td>
-                            <td class="center">C</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -195,7 +193,7 @@
                             <td class="center">A</td>
                             <td class="center">6</td>
                             <td class="center">A</td>
-                            <td class="center">C</td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -205,7 +203,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                            <td class="center">C</td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -215,7 +213,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                            <td class="center">C</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -225,7 +223,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                            <td class="center">C</td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -235,7 +233,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                            <td class="center">C</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -245,7 +243,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                            <td class="center">C</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -255,7 +253,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                            <td class="center">C</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                          <tr class="gradeA">
                             <td>Gecko</td>
@@ -265,7 +263,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                             <td class="center">C</td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
                         </tr>
                        
                        
