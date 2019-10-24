@@ -28,10 +28,10 @@
      <div class="ibox ">
         <div class="tabs-container">
             <ul class="nav nav-tabs" role="tablist">
-                <li><a class="nav-link" href="#tab-1"><i class="fa fa-file-text mr-1"></i>Document</a></li>
+                <li><a class="nav-link" href="_customerDocument.aspx"><i class="fa fa-file-text mr-1"></i>Document</a></li>
                 <li><a class="nav-link active" href="#tab-2"><i class="fa fa-info-circle mr-1"></i>Thông tin hồ sơ</a></li>
-                <li><a class="nav-link" href="#tab-3"><i class="fa fa-envelope mr-1"></i>Email</a></li>
-                <li><a class="nav-link" href="#tab-4"><i class="fa fa-list-alt mr-1"></i>Nhật ký hồ sơ</a></li>
+                <li><a class="nav-link" href="_customerEmailIn.aspx"><i class="fa fa-envelope mr-1"></i>Email</a></li>
+                <li><a class="nav-link" href="_customerInteractiveHistory.aspx"><i class="fa fa-list-alt mr-1"></i>Nhật ký hồ sơ</a></li>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active">
@@ -492,7 +492,7 @@
                                 </div>
                             </section>
                             <%--IBT--%>
-                            <section>
+                            <section class="mb-5">
                                 <h3 class="my-4 line-title">IBT
                                     <a class="text-default edit-icon" data-toggle="collapse" href="#collapse05" role="button" aria-expanded="false" aria-controls="collapse05"><i class="fa fa-edit ml-2"></i></a>
                                 </h3>
@@ -531,7 +531,7 @@
                                                 <div class="modal-content animated fadeIn">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <h4 class="modal-title">Cập nhật phí dịch vụ</h4>
+                                                        <h4 class="modal-title">Phí dịch vụ</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="form-group">
@@ -564,14 +564,14 @@
                                     </div>
                                     <div class="layer-fee">
                                         <h3>
-                                            <i class="fa fa-angle-right"></i><a class="text-default" href="#servive-fee" data-toggle="modal" data-target="#layerFeeModal"> PHÍ LUẬT SƯ <i class="fa fa-plus-circle"></i></a>
+                                            <i class="fa fa-angle-right"></i><a class="text-default" href="#lawyer-fee" data-toggle="modal" data-target="#lawyerFeeModal"> PHÍ LUẬT SƯ <i class="fa fa-plus-circle"></i></a>
                                         </h3>
-                                    <div class="modal inmodal" id="layerFeeModal">
+                                    <div class="modal inmodal" id="lawyerFeeModal">
                                         <div class="modal-dialog">
                                             <div class="modal-content animated fadeIn">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                    <h4 class="modal-title">Cập nhật phí luật sư</h4>
+                                                    <h4 class="modal-title">Phí luật sư</h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="form-group">
@@ -582,11 +582,11 @@
                                                     <ul class="list-unstyled">
                                                         <li class="i-checks">
                                                             <label>
-                                                                <input type="radio" name="serviveFeeStatus" checked=""><span class="ml-1">Chưa thanh toán</span> </label>
+                                                                <input type="radio" name="lawyerFeeStatus" checked=""><span class="ml-1">Chưa thanh toán</span> </label>
                                                         </li>
                                                         <li class="i-checks">
                                                             <label>
-                                                                <input type="radio" name="serviveFeeStatus"><span class="ml-1">Đã thanh toán</span></label>
+                                                                <input type="radio" name="lawyerFeeStatus"><span class="ml-1">Đã thanh toán</span></label>
                                                         </li>
                                                     </ul>
                                                     <div class="form-group">
@@ -611,7 +611,7 @@
                                                 <div class="modal-content animated fadeIn">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <h4 class="modal-title">Cập nhật phí chính phủ</h4>
+                                                        <h4 class="modal-title">Phí chính phủ</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="form-group">
@@ -622,12 +622,12 @@
                                                         <ul class="list-unstyled">
                                                             <li class="i-checks">
                                                                 <label>
-                                                                    <input type="radio" name="serviveFeeStatus" checked=""><span class="ml-1">Chưa thanh toán</span>
+                                                                    <input type="radio" name="govermentFeeStatus" checked=""><span class="ml-1">Chưa thanh toán</span>
                                                                 </label>
                                                             </li>
                                                             <li class="i-checks">
                                                                 <label>
-                                                                    <input type="radio" name="serviveFeeStatus"><span class="ml-1">Đã thanh toán</span></label>
+                                                                    <input type="radio" name="govermentFeeStatus"><span class="ml-1">Đã thanh toán</span></label>
                                                             </li>
                                                         </ul>
                                                         <div class="form-group">
@@ -652,7 +652,7 @@
                                                 <div class="modal-content animated fadeIn">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <h4 class="modal-title">Cập nhật phí kinh doanh</h4>
+                                                        <h4 class="modal-title">Phí kinh doanh</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="form-group">
@@ -663,12 +663,12 @@
                                                         <ul class="list-unstyled">
                                                             <li class="i-checks">
                                                                 <label>
-                                                                    <input type="radio" name="serviveFeeStatus" checked=""><span class="ml-1">Chưa thanh toán</span>
+                                                                    <input type="radio" name="businessFeeStatus" checked=""><span class="ml-1">Chưa thanh toán</span>
                                                                 </label>
                                                             </li>
                                                             <li class="i-checks">
                                                                 <label>
-                                                                    <input type="radio" name="serviveFeeStatus"><span class="ml-1">Đã thanh toán</span></label>
+                                                                    <input type="radio" name="businessFeeStatus"><span class="ml-1">Đã thanh toán</span></label>
                                                             </li>
                                                         </ul>
                                                         <div class="form-group">
@@ -693,7 +693,7 @@
                                                 <div class="modal-content animated fadeIn">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <h4 class="modal-title">Cập nhật các phí khác</h4>
+                                                        <h4 class="modal-title">Các phí khác</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="form-group">
@@ -704,12 +704,12 @@
                                                         <ul class="list-unstyled">
                                                             <li class="i-checks">
                                                                 <label>
-                                                                    <input type="radio" name="serviveFeeStatus" checked=""><span class="ml-1">Chưa thanh toán</span>
+                                                                    <input type="radio" name="otherFeeStatus" checked=""><span class="ml-1">Chưa thanh toán</span>
                                                                 </label>
                                                             </li>
                                                             <li class="i-checks">
                                                                 <label>
-                                                                    <input type="radio" name="serviveFeeStatus"><span class="ml-1">Đã thanh toán</span></label>
+                                                                    <input type="radio" name="otherFeeStatus"><span class="ml-1">Đã thanh toán</span></label>
                                                             </li>
                                                         </ul>
                                                         <div class="form-group">
@@ -800,7 +800,8 @@
             keyboardNavigation: false,
             forceParse: false,
             calendarWeeks: true,
-            autoclose: true
+            autoclose: true,
+            format: "dd/mm/yyyy"
         });
         var yearsAgo = new Date();
         yearsAgo.setFullYear(yearsAgo.getFullYear() - 20);

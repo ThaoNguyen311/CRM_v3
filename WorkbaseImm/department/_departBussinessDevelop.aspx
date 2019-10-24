@@ -4,9 +4,20 @@
     <link href="../css/plugins/dataTables/datatables.min.css" rel="stylesheet">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPageHeading" runat="server">
-    <div class="row wrapper border-bottom white-bg page-heading">
+     <div class="row wrapper border-bottom white-bg page-heading">
         <div class="col-lg-12">
             <h2>Thông tin các đối tác hợp tác với IMM</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a>Bộ phận</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Thông tin đối tác</strong>
+                </li>
+            </ol>
         </div>
     </div>
 </asp:Content>
@@ -171,7 +182,8 @@
             keyboardNavigation: false,
             forceParse: false,
             calendarWeeks: true,
-            autoclose: true
+            autoclose: true,
+            format: "dd/mm/yyyy"
         });
 
         var yearsAgo = new Date();

@@ -201,6 +201,7 @@
     <Content Include="css\_mainGeneral.css" />
     <Content Include="css\_mainQuickCreate.css" />
     <Content Include="css\_mainYourCustomer.css" />
+    <Content Include="css\_reportListCusSaleReDelete.css" />
     <Content Include="customer\_customerDocument.aspx" />
     <Content Include="customer\_customerEmailIn.aspx" />
     <Content Include="customer\_customerEmailOut.aspx" />

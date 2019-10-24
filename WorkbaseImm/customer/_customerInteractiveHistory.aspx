@@ -16,9 +16,9 @@
     <div class="ibox ">
         <div class="tabs-container">
             <ul class="nav nav-tabs" role="tablist">
-                <li><a class="nav-link" href="#tab-1"><i class="fa fa-file-text mr-1"></i>Document</a></li>
-                <li><a class="nav-link" href="#tab-2"><i class="fa fa-info-circle mr-1"></i>Thông tin hồ sơ</a></li>
-                <li><a class="nav-link" href="#tab-3"><i class="fa fa-envelope mr-1"></i>Email</a></li>
+                <li><a class="nav-link" href="_customerDocument.aspx"><i class="fa fa-file-text mr-1"></i>Document</a></li>
+                <li><a class="nav-link" href="_customerProfile.aspx"><i class="fa fa-info-circle mr-1"></i>Thông tin hồ sơ</a></li>
+                <li><a class="nav-link" href="_customerEmailIn.aspx"><i class="fa fa-envelope mr-1"></i>Email</a></li>
                 <li><a class="nav-link active" href="#tab-4"><i class="fa fa-list-alt mr-1"></i>Nhật ký hồ sơ</a></li>
             </ul>
             <div class="tab-content">

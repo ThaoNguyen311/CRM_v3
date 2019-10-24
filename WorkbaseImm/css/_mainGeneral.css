@@ -11,6 +11,9 @@ input, select {
 .text-default {
     color: #1ab394
 }
+a {
+    color: #1ab394;
+}
 a:hover, a:focus, a:active {
     color: #18a689
 }
@@ -53,4 +56,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 .chosen-choices input{
     width:100% !important;
+}
+.table-responsive .i-checks label {
+    margin-bottom: 0
+}
+.table-responsive .name{
+    white-space:nowrap
 }
