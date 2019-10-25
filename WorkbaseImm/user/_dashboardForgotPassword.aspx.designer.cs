@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WorkbaseImm
+namespace WorkbaseImm.user
 {
 
 
-    public partial class _404
+    public partial class _dashboardForgotPassword
     {
     }
 }

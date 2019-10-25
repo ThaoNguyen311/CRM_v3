@@ -198,6 +198,7 @@
     <Content Include="css\plugins\touchspin\jquery.bootstrap-touchspin.min.css" />
     <Content Include="css\style.css" />
     <Content Include="css\_customerInteractiveHistory.css" />
+    <Content Include="css\_dashboardEditInfo.css" />
     <Content Include="css\_mailbox.css" />
     <Content Include="css\_mainGeneral.css" />
     <Content Include="css\_mainQuickCreate.css" />
@@ -1477,6 +1478,7 @@
     <Content Include="user\_dashboardChangePassword.aspx" />
     <Content Include="user\_dashboardEditInfo.aspx" />
     <Content Include="user\_dashboardForgetPassword.aspx" />
+    <Content Include="user\_dashboardForgotPassword.aspx" />
     <Content Include="Web.config" />
     <Content Include="main\CodeMain.aspx" />
     <Content Include="WebForm2.aspx" />
@@ -1780,6 +1782,13 @@
     </Compile>
     <Compile Include="user\_dashboardForgetPassword.aspx.designer.cs">
       <DependentUpon>_dashboardForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\_dashboardForgotPassword.aspx.cs">
+      <DependentUpon>_dashboardForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\_dashboardForgotPassword.aspx.designer.cs">
+      <DependentUpon>_dashboardForgotPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
