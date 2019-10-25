@@ -71,6 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.aspx" />
     <Content Include="AjaxCore.aspx" />
     <Content Include="config\_configSystemCodeManagement.aspx" />
     <Content Include="config\_configUserManagement.aspx" />
@@ -207,6 +208,8 @@
     <Content Include="customer\_customerEmailOut.aspx" />
     <Content Include="customer\_customerInteractiveHistory.aspx" />
     <Content Include="customer\_customerProfile.aspx" />
+    <Content Include="dashboard\_dashboardAddClassifica.aspx" />
+    <Content Include="dashboard\_dashboardAddEmployee.aspx" />
     <Content Include="default.aspx" />
     <Content Include="department\_departBussinessDevelop.aspx" />
     <Content Include="department\_departCaseProcessing.aspx" />
@@ -1469,11 +1472,21 @@
     <Content Include="report\_reportListCusSaleReback.aspx" />
     <Content Include="report\_reportListCusSaleReDelete.aspx" />
     <Content Include="report\_reportTeamSaleIsBlocked.aspx" />
+    <Content Include="user\_dashboardChangePassword.aspx" />
+    <Content Include="user\_dashboardEditInfo.aspx" />
+    <Content Include="user\_dashboardForgetPassword.aspx" />
     <Content Include="Web.config" />
     <Content Include="main\CodeMain.aspx" />
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AjaxCore.aspx.cs">
       <DependentUpon>AjaxCore.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1543,6 +1556,20 @@
     </Compile>
     <Compile Include="customer\_customerProfile.aspx.designer.cs">
       <DependentUpon>_customerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\_dashboardAddClassifica.aspx.cs">
+      <DependentUpon>_dashboardAddClassifica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\_dashboardAddClassifica.aspx.designer.cs">
+      <DependentUpon>_dashboardAddClassifica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\_dashboardAddEmployee.aspx.cs">
+      <DependentUpon>_dashboardAddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\_dashboardAddEmployee.aspx.designer.cs">
+      <DependentUpon>_dashboardAddEmployee.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataClasses.designer.cs">
       <AutoGen>True</AutoGen>
@@ -1716,6 +1743,27 @@
     </Compile>
     <Compile Include="report\_reportTeamSaleIsBlocked.aspx.designer.cs">
       <DependentUpon>_reportTeamSaleIsBlocked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\_dashboardChangePassword.aspx.cs">
+      <DependentUpon>_dashboardChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\_dashboardChangePassword.aspx.designer.cs">
+      <DependentUpon>_dashboardChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\_dashboardEditInfo.aspx.cs">
+      <DependentUpon>_dashboardEditInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\_dashboardEditInfo.aspx.designer.cs">
+      <DependentUpon>_dashboardEditInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\_dashboardForgetPassword.aspx.cs">
+      <DependentUpon>_dashboardForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\_dashboardForgetPassword.aspx.designer.cs">
+      <DependentUpon>_dashboardForgetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
