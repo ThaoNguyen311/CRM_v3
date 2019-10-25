@@ -157,7 +157,7 @@
                             <td class="center">
                                 Win 95+
                             </td>
-                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                         <tr class="">
                             <td>Trident</td>
@@ -169,7 +169,7 @@
                             <td class="center">C</td>
                             <td class="center">5</td>
                             <td class="center">C</td>
-                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -181,7 +181,7 @@
                             <td class="center">A</td>
                             <td class="center">5.5</td>
                             <td class="center">A</td>
-                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -193,7 +193,7 @@
                             <td class="center">A</td>
                             <td class="center">6</td>
                             <td class="center">A</td>
-                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -203,7 +203,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Trident</td>
@@ -213,7 +213,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -223,7 +223,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                            <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                            <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -233,7 +233,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -243,7 +243,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                         <tr class="gradeA">
                             <td>Gecko</td>
@@ -253,7 +253,7 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                          <tr class="gradeA">
                             <td>Gecko</td>
@@ -263,11 +263,9 @@
                             <td class="center">A</td>
                              <td class="center">7</td>
                             <td class="center">A</td>
-                             <td class="center"><a class="btn btn-info btn-xs" href="#">view</a></td>
+                             <td class="center"><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#viewdiary"><i class="fa fa-eye"></i> <strong>View</strong></a></td>
                         </tr>
                        
-                       
-
                     </tbody>
                     <tfoot>
                         <tr>
@@ -286,6 +284,147 @@
 
         </div>
     </div>
+    <div class="modal inmodal" id="viewdiary" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content animated bounceInLeft">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <div class="px-4"><i class="fa fa fa-eye modal-icon"></i></div>
+                    <h4 class="modal-title">Nhật ký của KH:</h4>
+                    <div class="my-3"><span class="label label-info">Nguyễn Ngọc Tuyên</span></div>
+                </div>
+                <div class="modal-body">
+                    <div class="" style="height:300px;">
+                        <div class="full-height-scroll" >
+                            <ul class="list-group elements-list">
+                           
+                            <li class="list-group-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-2">
+                                    <small class="float-right text-muted"><i class="fa fa-calendar"></i> 16.02.2015 3:08:17 PM</small>
+                                    <strong>Paul Morgan</strong>
+                                    <div class="small m-t-xs">
+                                        <p class="m-b-xs">
+                                            There are many variations of passages of Lorem Ipsum.
+                                            <br>
+                                        </p>
+                                        <p class="mt-3 mb-0">
+                                            <span class="label label-primary">Ghi chú nội bộ</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-3">
+                                    <small class="float-right text-muted"><i class="fa fa-calendar"></i> 16.02.2015 3:08:17 PM</small>
+                                    <strong>Michael Jackson</strong>
+                                    <div class="small m-t-xs">
+                                        <p class="m-b-xs">
+                                            Look even slightly believable. If you are going to use a passage of.
+                                        </p>
+                                        <p class="mt-3 mb-0">
+                                            <span class="label label-primary">Ghi chú nội bộ</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-4">
+                                    <small class="float-right text-muted"><i class="fa fa-calendar"></i> 16.02.2015 3:08:17 PM</small>
+                                    <strong>Mark Smith</strong>
+                                    <div class="small m-t-xs">
+                                        <p class="m-b-xs">
+                                            It was popularised in the 1960s with the release of Letraset sheets
+                                        </p>
+                                        <p class="mt-3 mb-0">
+                                            <span class="label label-primary">Ghi chú nội bộ</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-1">
+                                    <small class="float-right text-muted"><i class="fa fa-calendar"></i> 16.02.2015 3:08:17 PM</small>
+                                    <strong>Monica Novak</strong>
+                                    <div class="small m-t-xs">
+                                        <p class="m-b-xs">
+                                            Printer took a galley of type and scrambled.
+                                        </p>
+                                        <p class="mt-3 mb-0">
+                                            <span class="label label-primary">Ghi chú nội bộ</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-2">
+                                    <small class="float-right text-muted"><i class="fa fa-calendar"></i> 16.02.2015 3:08:17 PM</small>
+                                    <strong>Jack Smith</strong>
+                                    <div class="small m-t-xs">
+                                        <p class="m-b-xs">
+                                            Also the leap into electronic typesetting, remaining.
+                                        </p>
+                                        <p class="m-b-none">
+                                            <i class="fa fa-map-marker"></i> Sant Fe 10/106
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-3">
+                                    <small class="float-right text-muted"><i class="fa fa-calendar"></i> 16.02.2015 3:08:17 PM</small>
+                                    <strong>Michael Jackson</strong>
+                                    <div class="small m-t-xs">
+                                        <p class="m-b-xs">
+                                            Look even slightly believable. If you are going to use a passage of.
+                                        </p>
+                                        <p class="m-b-none">
+                                            <i class="fa fa-map-marker"></i> Berlin 120R/15
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-4">
+                                    <small class="float-right text-muted"><i class="fa fa-calendar"></i> 16.02.2015 3:08:17 PM</small>
+                                    <strong>Mark Smith</strong>
+                                    <div class="small m-t-xs">
+                                        <p class="m-b-xs">
+                                            It was popularised in the 1960s with the release of Letraset sheets
+                                        </p>
+                                        <p class="m-b-none">
+                                            <i class="fa fa-map-marker"></i> San Francisko 12/100
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-1">
+                                    <small class="float-right text-muted"><i class="fa fa-calendar"></i> 16.02.2015 3:08:17 PM</small>
+                                    <strong>Monica Novak</strong>
+                                    <div class="small m-t-xs">
+                                        <p class="m-b-xs">
+                                            Printer took a galley of type and scrambled.
+                                        </p>
+                                        <p class="m-b-none">
+                                            <i class="fa fa-map-marker"></i> New York 15/43
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Footer" runat="server">
    <script src="../js/plugins/dataTables/datatables.min.js"></script>
@@ -299,6 +438,7 @@
     <script src="../js/plugins/daterangepicker/daterangepicker.js"></script>
     <!-- Data picker -->
    <script src="../js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <script>
 
 

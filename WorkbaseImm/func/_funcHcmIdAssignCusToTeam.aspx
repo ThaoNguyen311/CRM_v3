@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/crm.Master" AutoEventWireup="true" CodeBehind="_funcHnAssignCusToTeam.aspx.cs" Inherits="WorkbaseImm.func._funcHnAssignCusToTeam" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/crm.Master" AutoEventWireup="true" CodeBehind="_funcHcmIdAssignCusToTeam.aspx.cs" Inherits="WorkbaseImm.func._funcHcmIdAssignCusToTeam" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>CRM SYSTEM | Hà Nội - Danh sách phân công </title>
+     <title>CRM SYSTEM | HCM - Danh sách phân công </title>
     <link href="../css/plugins/dataTables/datatables.min.css" rel="stylesheet">
     <link href="../css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
     <link href="../css/plugins/datapicker/datepicker3.css" rel="stylesheet">
@@ -9,7 +9,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPageHeading" runat="server">
     <div class="row wrapper border-bottom white-bg page-heading">
         <div class="col-lg-12">
-            <h2>Hà Nội - Danh sách khách hàng đang bị khóa do không ai chăm sóc </h2>
+            <h2>Hồ Chí Minh - Danh sách khách hàng đang bị khóa do không ai chăm sóc </h2>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
                     <a href="index.html">Home</a>
@@ -25,73 +25,46 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentAll" runat="server">
-    <div class="tabs-container">
+     <div class="tabs-container">
         <ul class="nav nav-tabs" role="tablist">
-            <li><a class="nav-link active" href="#tab-1"><i class="fa fa-file-text mr-1"></i>Danh sách chưa được phân công</a></li>
-            <li><a class="nav-link" href="/func/_funcHnIdAssignCusToTeam.aspx"><i class="fa fa-file-text mr-1"></i>Danh sách đã phân công</a></li>
+            <li><a class="nav-link " href="/func/_funcHcmAssignCusToTeam.aspx"><i class="fa fa-file-text mr-1"></i>Danh sách chưa được phân công</a></li>
+            <li><a class="nav-link active" href="_customerProfile.aspx"><i class="fa fa-file-text mr-1"></i>Danh sách đã phân công</a></li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane active">
                 <div class="panel-body">
                     <div class="py-3">
-                        <form role="form" class="">
-                            <div class="row">
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                               <div class="form-group">
-                                                    <label for="exampleInputEmail2" class="">Chọn người được phân công</label>
-                                                    <select class="form-control m-b" name="account">
-                                                        <option>Trần Thị Thanh Thùy [CARMEN]</option>
-                                                        <option>Trần Thị Thanh Thùy [CARMEN]</option>
-                                                        <option>Trần Thị Thanh Thùy [CARMEN]</option>
-                                                        <option>Trần Thị Thanh Thùy [CARMEN]</option>
-                                                    </select>
-                                                </div>
-                                           </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="">Chọn sản phẩm</label>
-                                                    <select class="form-control m-b" name="account">
-                                                        <option>Di trú Canada</option>
-                                                        <option>Di trú Úc</option>
-                                                        <option>Di trú Úc</option>
-                                                        <option>Di trú Úc</option>
-                                                    </select>
-                                                </div>
-                                           </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="">Chọn team sale</label>
-                                                    <select class="form-control m-b" name="account">
-                                                        <option>Trần Thị Thanh Thùy [CARMEN]</option>
-                                                        <option>Trần Thị Thanh Thùy [CARMEN]</option>
-                                                        <option>Trần Thị Thanh Thùy [CARMEN]</option>
-                                                        <option>Trần Thị Thanh Thùy [CARMEN]</option>
-                                                    </select>
-                                                </div>
-                                           </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group" id="dataDateTimeFrom">
-                                            <label class="font-normal">Từ ngày</label>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control"  placeholder="MM/DD/YY"  value="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group" id="dataDateTimeTo">
-                                            <label class="font-normal">Đến ngày</label>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control"  placeholder="MM/DD/YY" value="">
-                                            </div>
-                                        </div>
-                                    </div>
+                        <h2><small>Danh sách đang hiển thị tổng số <span class="text-navy font-weight-bold">5757</span> saleleads đã phân công</small></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                           <div class="ibox ">
+                                <div class="ibox-content no-padding">
+                                    <ul class="list-group">
+                                        <li class="list-group-item pl-0">
+                                            <span class="badge badge-primary mr-2">161</span>
+                                            AUBREY
+                                        </li>
+                                        <li class="list-group-item pl-0">
+                                            <span class="badge badge-primary mr-2">6</span>
+                                            CATHERINE
+                                        </li>
+                                        <li class="list-group-item pl-0">
+                                            <span class="badge badge-primary mr-2">16</span>
+                                            ELENA
+                                        </li>
+                                        <li class="list-group-item pl-0">
+                                            <span class="badge badge-primary mr-2">33</span>
+                                            ELENA
+                                        </li>
+                                        <li class="list-group-item pl-0">
+                                            <span class="badge badge-primary mr-2">16</span>
+                                            ELENA
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <button class="btn btn-primary btn-sm" type="submit">Submit</button>
-                        </form>
+                        </div>
                     </div>
                     <div class="ibox-content px-0">
                         <div class="table-responsive">
@@ -197,8 +170,7 @@
                 <div class="modal-body">
                     <div class="" style="height:300px;">
                         <div class="full-height-scroll" >
-                            <ul class="list-group elements-list">
-                           
+                            <ul class="list-group elements-list">                         
                             <li class="list-group-item">
                                 <a class="nav-link" data-toggle="tab" href="#tab-2">
                                     <small class="float-right text-muted"><i class="fa fa-calendar"></i> 16.02.2015 3:08:17 PM</small>
@@ -312,12 +284,8 @@
                                     </div>
                                 </a>
                             </li>
-
-
                         </ul>
-                        </div>
-                        
-
+                        </div>            
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -328,7 +296,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Footer" runat="server">
-    <script src="../js/plugins/dataTables/datatables.min.js"></script>
+     <script src="../js/plugins/dataTables/datatables.min.js"></script>
     <script src="../js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
     <!-- Ladda -->
     <script src="../js/plugins/ladda/spin.min.js"></script>
@@ -408,5 +376,4 @@
             });
         });
     </script>
-    <%--https://crm.imm.group/customer/your-assign.aspx?mode=none&prod=CT01&sale=140&vp=OFFICE02--%>
 </asp:Content>

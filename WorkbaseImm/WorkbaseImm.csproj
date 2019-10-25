@@ -245,7 +245,9 @@
     <Content Include="func\_funcFilterAndAssign.aspx" />
     <Content Include="func\_funcGetRandomSaleleads.aspx" />
     <Content Include="func\_funcHcmAssignCusToTeam.aspx" />
+    <Content Include="func\_funcHcmIdAssignCusToTeam.aspx" />
     <Content Include="func\_funcHnAssignCusToTeam.aspx" />
+    <Content Include="func\_funcHnIdAssignCusToTeam.aspx" />
     <Content Include="func\_funcSearch.aspx" />
     <Content Include="func\_funcYourCustomer.aspx" />
     <Content Include="img\a1.jpg" />
@@ -1668,12 +1670,26 @@
     <Compile Include="func\_funcHcmAssignCusToTeam.aspx.designer.cs">
       <DependentUpon>_funcHcmAssignCusToTeam.aspx</DependentUpon>
     </Compile>
+    <Compile Include="func\_funcHcmIdAssignCusToTeam.aspx.cs">
+      <DependentUpon>_funcHcmIdAssignCusToTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="func\_funcHcmIdAssignCusToTeam.aspx.designer.cs">
+      <DependentUpon>_funcHcmIdAssignCusToTeam.aspx</DependentUpon>
+    </Compile>
     <Compile Include="func\_funcHnAssignCusToTeam.aspx.cs">
       <DependentUpon>_funcHnAssignCusToTeam.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="func\_funcHnAssignCusToTeam.aspx.designer.cs">
       <DependentUpon>_funcHnAssignCusToTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="func\_funcHnIdAssignCusToTeam.aspx.cs">
+      <DependentUpon>_funcHnIdAssignCusToTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="func\_funcHnIdAssignCusToTeam.aspx.designer.cs">
+      <DependentUpon>_funcHnIdAssignCusToTeam.aspx</DependentUpon>
     </Compile>
     <Compile Include="func\_funcSearch.aspx.cs">
       <DependentUpon>_funcSearch.aspx</DependentUpon>
